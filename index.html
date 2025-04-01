@@ -1,11 +1,315 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
- <meta charset="UTF-8">
- <title>Welcome to My Site</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ChainXplorer</title>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script src="script.js" type="module"></script>
+        
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+
+</head> 
+
 <body>
- <h1>Hello! I'm Samuel </h1>
- <p>This is my GitHub Pages personal website.</p>
+     <!-- 導覽列 -->
+      
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">ChainXplorer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#news">最新消息</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#guides">指南</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tools">工具</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#community">社群</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <section id="slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="BTC.jpg" alt="Image 1"></div>
+                    <div class="swiper-slide"><img src="BlockChain.jpg" alt="Image 2"></div>
+                    <div class="swiper-slide"><img src="Web3.jpg" alt="Image 3"></div>
+                </div>
+                <!-- 分頁點點 -->
+                <div class="swiper-pagination"></div>
+                <!-- 左右切換按鈕 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                  <h3 class="mb-0">Featured post</h3>
+                  <div class="mb-1 text-body-secondary">Nov 12</div>
+                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                    Continue reading
+                    <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+                  </a>
+                </div>
+                <div class="col-auto d-none d-lg-block" style="width:300px; height:250px; background-image: url('BTC.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center;">
+                </div>
+              </div>
+            </div>
+        <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+         <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+          <h3 class="mb-0">Post title</h3>
+          <div class="mb-1 text-body-secondary">Nov 11</div>
+          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Continue reading
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="300" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-5">
+        <div class="col-md-8">
+          <h3 class="pb-4 mb-4 fst-italic border-bottom">
+            From the Firehose
+          </h3>
+    
+          <section id="guides">
+            <h3>新手指南</h3>
+            <div class="guides-list">
+                <article>
+                    <h4>什麼是區塊鏈？</h4>
+                    <p>新手專區，從基礎了解產業應用、DEFI、崛起賽道...<a href="https://www.blocktempo.com/category/crypto-guide/" target="_blank">了解更多</a>
+                    </article></p>
+                    
+                <article>
+                    <h4>購買您的第一種加密貨幣</h4>
+                    <p>購買加密貨幣的逐步指南。</p>
+                    <a href="#">了解更多</a>
+                </article>
+            </div>
+         </section>
+    
+          <article class="blog-post">
+            <h2 class="display-5 link-body-emphasis mb-1">Another blog post</h2>
+            <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
+    
+            <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+            <blockquote>
+              <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
+            </blockquote>
+            <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+            <h3>Example table</h3>
+            <p>And don't forget about tables in these posts:</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Upvotes</th>
+                  <th>Downvotes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Alice</td>
+                  <td>10</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>Bob</td>
+                  <td>4</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Charlie</td>
+                  <td>7</td>
+                  <td>9</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Totals</td>
+                  <td>21</td>
+                  <td>23</td>
+                </tr>
+              </tfoot>
+            </table>
+    
+            <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+          </article>
+
+          <section id="tools">
+            <h3>實用工具</h3>
+            <div class="tools-list">
+                <article>
+                    <h4>CoinMarketCap</h4>
+                    <p>追蹤加密貨幣價格和市值。</p>
+                    <a href="#">瀏覽</a>
+                </article>
+                <article>
+                    <h4>區塊鏈瀏覽器</h4>
+                    <p>探索區塊鏈交易。</p>
+                    <a href="#">瀏覽</a>
+                </article>
+            </div>
+        </section>
+
+          <article class="blog-post">
+            <h2 class="display-5 link-body-emphasis mb-1">New feature</h2>
+            <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+    
+            <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+            <ul>
+              <li>First list item</li>
+              <li>Second list item with a longer description</li>
+              <li>Third list item to close it out</li>
+            </ul>
+            <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+          </article>
+        </div>
+
+<!-- 右側欄位 -->
+        <div class="col-md-4">
+          <div class="position-sticky" style="top: 2rem;">
+            <div class="p-4 mb-3 bg-body-tertiary rounded">
+              <h4 class="fst-italic">About</h4>
+              <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+            </div>
+
+            <div>
+                <h4 class="pb-4 mb-4 fst-italic border-bottom">
+                    New Price
+                </h4>
+                <div class="crypto-list" id="crypto-list"></div>
+                <link rel="stylesheet" href="styleprice.css">
+                
+                <script>
+                    const cryptoData = [
+                        { id: 'bitcoin', symbol: 'BTC', name: 'Bitcoin' },
+                        { id: 'ethereum', symbol: 'ETH', name: 'Ethereum' },
+                        { id: 'litecoin', symbol: 'LTC', name: 'Litecoin' }
+                    ];
+            
+                    async function fetchCryptoData() {
+                        try {
+                            const response = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${cryptoData.map(c => c.id).join(',')}&vs_currencies=usd&include_24hr_change=true`);
+                            const data = await response.json();
+                            updateUI(data);
+                        } catch (error) {
+                            console.error("獲取數據失敗:", error);
+                        }
+                    }
+            
+                    function createCryptoElement(crypto, data) {
+                        const div = document.createElement('div');
+                        div.className = 'crypto-item';
+                        
+                        const cryptoInfo = data[crypto.id];
+                        if (!cryptoInfo) return null;
+            
+                        const price = cryptoInfo.usd;
+                        const change = cryptoInfo.usd_24h_change;
+                        
+                        div.innerHTML = `
+                            <div class="crypto-icon">${crypto.symbol}</div>
+                            <div class="crypto-info">
+                                <h3 class="crypto-name">${crypto.name}</h3>
+                                <p class="crypto-price">$${price.toLocaleString('en-US', {
+                                    minimumFractionDigits: 2,
+                                    maximumFractionDigits: 6
+                                })}</p>
+                            </div>
+                            <span class="price-change ${change >= 0 ? 'change-up' : 'change-down'}">
+                                ${change >= 0 ? '↑' : '↓'} ${Math.abs(change).toFixed(2)}%
+                            </span>
+                        `;
+                        
+                        return div;
+                    }
+            
+                    function updateUI(data) {
+                        const container = document.getElementById('crypto-list');
+                        container.innerHTML = '';
+                        
+                        cryptoData.forEach(crypto => {
+                            const element = createCryptoElement(crypto, data);
+                            if (element) {
+                                container.appendChild(element);
+                            }
+                        });
+                    }
+            
+                    // 初始化和定期更新
+                    fetchCryptoData();
+                    setInterval(fetchCryptoData, 30000); // 保持原本的 30 秒更新頻率
+                </script>
+            </div>
+        
+    
+        <section id="community">
+            <h3 class="pb-4 mb-4 fst-italic border-bottom">加入社群</h3>
+            <p>與其他區塊鏈和加密貨幣愛好者聯繫。</p>
+            <a href="#">論壇</a>
+            <a href="#">Discord</a>
+        </section>
+
+        
+        <section id="subscribe">
+            <h3 class="pb-4 mb-4 fst-italic border-bottom">訂閱最新資訊</h3>
+            <form>
+                <label for="email">電子郵件：</label>
+                <input type="email" id="email" name="email" placeholder="輸入您的電子郵件">
+                <button type="submit">訂閱</button>
+            </form>
+        </section>
+
+        
+        
+        
+    </main>
+
+    <footer>
+        <p>&copy; ChainXplorer</p>
+    </footer>
+<!-- Swiper.js 樣式 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+<!-- Swiper.js 程式碼 -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: { delay: 3000 }, // 自動播放 3 秒
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            pagination: { el: '.swiper-pagination', clickable: true }
+        });
+    });
+</script>
+
 </body>
 </html>
